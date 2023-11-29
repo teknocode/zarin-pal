@@ -1,0 +1,1125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "iranyekanwebregular", Arial, Helvetica, sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1170px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(20px);
+  position: sticky;
+  top: 0;
+  padding: 21px 0 7px;
+  transition: all 0.3 ease;
+  border-bottom: 1.2px solid #dfe1e4;
+}
+.logo {
+  margin: 11px 28px;
+}
+.header-ul {
+  display: flex;
+  list-style: none;
+}
+.header-ul li {
+  font-size: 14px;
+  margin: 0 15px;
+}
+.header-ul li a {
+  text-decoration: none;
+  color: #303030;
+}
+.header-ul > li:last-child a {
+  color: #28457b;
+  background-color: rgba(232, 239, 254, 0.6);
+  border-radius: 20px;
+  padding: 10px 27px;
+  margin-right: 20px;
+  font-family: "YekanBakhBold";
+}
+.header-ul > li:last-child a::hover {
+  background-color: #fbf6d9;
+}
+.more-menu {
+  display: flex;
+}
+.more-menu img {
+  width: 8px;
+  margin-right: 8px;
+}
+.hamburger-icon {
+  width: 27px;
+  display: none;
+}
+
+.hamburger-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  width: 100%;
+  font-family: "YekanBakhMedium";
+  z-index: 100;
+  transform: translateY(-100%);
+}
+.cross-icon {
+  width: 100%;
+  text-align: left;
+  padding: 25px 0;
+}
+.cross-icon img {
+  width: 20px;
+  margin-left: 30px;
+}
+.hamburger-menu-items {
+  padding: 10px 30px;
+}
+.hamburger-menu-items ul {
+  list-style: none;
+}
+.hamburger-menu-items ul li a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  padding: 3px 0;
+}
+.hamburger-menu-items div {
+  height: 1px;
+  background-color: #dfe1e4;
+  width: 90%;
+}
+.more-item {
+  display: flex;
+  align-items: center;
+  background-color: #eee;
+  padding: 50px 20px;
+}
+.more-item a {
+  text-decoration: none;
+  color: #28457b;
+  font-size: 0.85rem;
+}
+.more-item img {
+  width: 15px;
+  margin: 5px;
+}
+.show-hamburger-menu {
+  animation: fadeInDown 0.35s forwards;
+}
+#show-more-menu {
+  position: relative;
+}
+#show-more-menu ul {
+  position: absolute;
+  top: 0;
+  left: -35px;
+  background-color: #fff;
+  list-style: none;
+  border-top: 5px solid #f8e88b;
+  border-radius: 12px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  margin-top: 23px;
+  text-align: center;
+  width: 130px;
+  cursor: pointer;
+}
+#show-more-menu li {
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  color: black;
+}
+#show-more-menu li:hover {
+  background-color: rgba(232, 239, 254, 0.6);
+}
+#show-product-menu {
+  position: relative;
+}
+.product-menu {
+  position: absolute;
+  top: 0;
+  left: -135px;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  width: 372px;
+  border-top: 5px solid #f8e88b;
+  border-radius: 12px;
+  padding-top: 15px;
+  padding-right: 10px;
+  margin-top: 25px;
+}
+.product-menu a p:first-child {
+  color: black;
+  font-size: 0.95rem;
+}
+.product-menu a p:last-child {
+  color: black;
+  font-size: 0.7rem;
+}
+.product-menu a {
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.product-menu a:hover {
+  background: rgba(232, 239, 254, 0.6);
+}
+.banner {
+  width: 1050px;
+  background-image: linear-gradient(135deg, #21254e, #2b4a83);
+  padding: 124px 60px 80px;
+  margin: 20px auto;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.banner-text h3 {
+  font-family: "YekanBakhHeavy";
+  font-size: 2rem;
+  color: #fff;
+}
+.banner-text p {
+  color: #fff;
+  font-size: 1.15rem;
+  margin: 25px 0;
+  line-height: 2.5rem;
+}
+
+.banner-image img {
+  width: 500px;
+}
+.banner-button {
+  margin-top: 60px;
+}
+.register {
+  font-size: 1rem;
+  font-family: "YekanBakhBold";
+  color: black;
+  background-color: #ffd900;
+  padding: 6px 14px;
+  border-radius: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.login {
+  font-size: 1rem;
+  font-family: "YekanBakhBold";
+  color: #fff;
+  background-color: #435a8a;
+  padding: 6px 14px;
+  border-radius: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.go-down {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 58px;
+}
+.go-down div {
+  background-image: url(../img/arrowbottom.svg);
+  width: 164px;
+  height: 78px;
+}
+.go-down img {
+  width: 15px;
+  position: relative;
+  top: -60px;
+}
+.online-payment {
+  width: 1170px;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.online-payment img {
+  width: 450px;
+  height: 480px;
+}
+.section-text {
+  margin: 30px 0;
+  width: 530px;
+}
+.section-text h2 {
+  color: #7b7b86;
+  font-family: "YekanBakhMedium";
+  font-size: 22px;
+  font-weight: 500px;
+  margin: 20px 0 5px;
+}
+.section-text h3 {
+  color: #303030;
+  font-family: "YekanBakhHeavy";
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 5px 0 10px;
+}
+.section-text p {
+  color: #3f3f42;
+  font-family: "YekanBakhMedium";
+  text-align: justify;
+  line-height: 40px;
+  border-bottom: 1px solid #dfe1e4;
+  padding-bottom: 20px;
+  margin-top: 16px;
+}
+.section-links {
+  margin-top: 40px;
+  display: flex;
+}
+.section-links .first-button {
+  font-size: 0.9rem;
+  font-family: "iranyekanwebmedium";
+  color: #000;
+  background-color: #ffd900;
+  padding: 6px 14px;
+  border-radius: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.section-links .second-button {
+  display: block;
+  font-size: 0.9rem;
+  font-family: "iranyekanwebmedium";
+  color: #28457b;
+  background-color: rgba(232, 239, 254, 0.6);
+  padding: 6px 14px;
+  border-radius: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.section-links .second-button img {
+  width: 18px;
+  height: 15px;
+  margin-right: 5px;
+}
+.section-text2 {
+  width: 480px;
+  height: 588px;
+  margin-right: 90px;
+  padding: 5px;
+}
+.section-text2 h2 {
+  color: #7b7b86;
+  font-family: "YekanBakhMedium";
+  font-size: 22px;
+  font-weight: 500px;
+  margin: 20px 0 5px;
+}
+.zarin-link {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.zarin-card-text h2 {
+  color: #7b7b86;
+  font-family: "YekanBakhMedium";
+  font-size: 22px;
+  font-weight: 500px;
+  margin: 20px 0 5px;
+}
+.zarin-card-text h3 {
+  color: #303030;
+  font-family: "YekanBakhHeavy";
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 5px 0 10px;
+}
+.zarin-link p {
+  color: #303030;
+  font-family: "YekanBakhMedium";
+  text-align: justify;
+  line-height: 40px;
+  border-bottom: 1px solid #dfe1e4;
+  padding-bottom: 20px;
+  margin-top: 16px;
+}
+.zarin-link-img .zarin-link-img1 {
+  width: 580px;
+  height: 530px;
+  margin-left: 20px;
+}
+.zarin-link-button {
+  display: flex;
+  padding-top: 39px;
+}
+.zarin-link-fbutton {
+  font-size: 0.9rem;
+  font-family: "iranyekanwebmedium";
+  color: #000;
+  background-color: #ffd900;
+  padding: 6px 14px;
+  border-radius: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.zarin-link-sbutton {
+  font-size: 0.9rem;
+  font-family: "iranyekanwebmedium";
+  color: #28457b;
+  background-color: rgba(232, 239, 254, 0.6);
+  padding: 6px 14px;
+  border-radius: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.zarin-link-sbutton img {
+  width: 18px;
+  height: 15px;
+  margin-right: 5px;
+}
+.zarin-card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 8px;
+}
+.zarin-card-text {
+  width: 358px;
+}
+.zarin-card-text p {
+  width: 500px;
+  color: #303030;
+  font-size: 16px;
+  font-family: "YekanBakhMedium";
+  text-align: justify;
+  line-height: 40px;
+  border-bottom: 1px solid #dfe1e4;
+  padding: 0px 0px 20px;
+  margin-top: 16px;
+}
+.zarin-card-text h2 {
+  color: #7b7b86;
+  font-family: "YekanBakhMedium";
+  font-size: 22px;
+  font-weight: 500px;
+  margin: 20px 0 5px;
+}
+.zarin-card-text h3 {
+  color: #303030;
+  font-family: "YekanBakhHeavy";
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 5px 0 10px;
+}
+.zarin-card-links {
+  display: flex;
+  padding-top: 39px;
+  margin: 17px 0 0 10px;
+}
+.zarin-card-fbutton {
+  font-size: 0.9rem;
+  font-family: "iranyekanwebmedium";
+  color: #000;
+  background-color: #ffd900;
+  padding: 6px 14px;
+  border-radius: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.zarin-card-sbutton {
+  font-size: 0.9rem;
+  font-family: "iranyekanwebmedium";
+  color: #28457b;
+  background-color: rgba(232, 239, 254, 0.6);
+  padding: 6px 14px;
+  border-radius: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.zarin-card-sbutton img {
+  width: 18px;
+  height: 15px;
+  margin-right: 5px;
+}
+.tashim {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 130px;
+}
+.tashim-text {
+  width: 494px;
+  height: 400px;
+}
+.tashim-text p {
+  margin-top: 10px;
+  width: 500px;
+  border-bottom: 1px solid #dfe1e4;
+  padding-bottom: 20px;
+  line-height: 40px;
+  color: #303030;
+  text-align: justify;
+  font-family: "YekanBakhMedium";
+}
+.tashim-text h2 {
+  color: #7b7b86;
+  font-family: "YekanBakhMedium";
+  font-size: 22px;
+  font-weight: 500px;
+  margin: 20px 0 5px;
+}
+.tashim-text h3 {
+  color: #303030;
+  font-family: "YekanBakhHeavy";
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 5px 0 10px;
+}
+.tashim-links {
+  display: flex;
+  padding-top: 39px;
+}
+.tashim-fbutton {
+  font-size: 0.9rem;
+  font-family: "iranyekanwebmedium";
+  color: #000;
+  background-color: #ffd900;
+  padding: 6px 14px;
+  border-radius: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.tashim-sbutton {
+  font-size: 0.9rem;
+  font-family: "iranyekanwebmedium";
+  color: #28457b;
+  background-color: rgba(232, 239, 254, 0.6);
+  padding: 6px 14px;
+  border-radius: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.tashim-sbutton img {
+  width: 18px;
+  height: 15px;
+  margin-right: 5px;
+}
+.tashim-img img {
+  width: 496px;
+  height: 400px;
+}
+.zarin-plus {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 90px;
+}
+.zarin-plus-img {
+  width: 577px;
+  height: 290px;
+}
+.zarin-plus-text {
+  display: flex;
+  width: 577px;
+}
+.zarinplus-text h2 {
+  color: #7b7b86;
+  font-family: "YekanBakhMedium";
+  font-size: 22px;
+  font-weight: 500px;
+  margin: 20px 0 5px;
+}
+.zarin-plus h3 {
+  color: #303030;
+  font-family: "YekanBakhHeavy";
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 5px 0 10px;
+}
+.zarin-plus p {
+  width: 470px;
+  height: 181px;
+  margin: 10px 0px 16px;
+  padding: 0 0 20px;
+  color: #303030;
+  font-size: 16px;
+  font-family: "YekanBakhMedium";
+  text-align: justify;
+  line-height: 40px;
+}
+.zarin-plus-links {
+  display: flex;
+  padding-top: 39px;
+  border-top: 1px solid #dfe1e4;
+}
+.zarin-plus-fbutton {
+  font-size: 0.9rem;
+  font-family: "iranyekanwebmedium";
+  color: #000;
+  background-color: #ffd900;
+  padding: 6px 14px;
+  border-radius: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.zarin-plus-sbutton {
+  font-size: 0.9rem;
+  font-family: "iranyekanwebmedium";
+  color: #28457b;
+  background-color: rgba(232, 239, 254, 0.6);
+  padding: 6px 14px;
+  border-radius: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.zarin-plus-fbutton img {
+  width: 18px;
+  height: 15px;
+  margin-right: 5px;
+}
+.attributes {
+  width: 1170px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.definition {
+  width: 35%;
+  margin-top: 50px;
+}
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 60%;
+  padding: 30px;
+}
+.items img {
+  width: 60px;
+  height: 60px;
+}
+.items .item h4 {
+  font-size: 1.4rem;
+  font-family: YekanBakhHeavy;
+  margin-right: 20px;
+}
+.items p {
+  margin: 20px 0 20px 10px;
+  font-family: YekanBakhMedium;
+  color: #303030;
+  line-height: 36px;
+}
+.definition h3 {
+  font-family: YekanBakhHeavy;
+  font-size: 2rem;
+}
+.definition p {
+  width: 85%;
+  margin-top: 40px;
+  line-height: 40px;
+  font-size: 1rem;
+}
+.first-item {
+  border-left: 1px solid #e0e4e7;
+  padding: 30px;
+}
+.second-item {
+  border-bottom: 1px solid #e0e4e7;
+  padding: 30px;
+}
+.third-item {
+  border-top: 1px solid #e0e4e7;
+  padding: 30px;
+}
+.fourth-item {
+  border-right: 1px solid #e0e4e7;
+  padding: 30px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  margin: auto;
+  border-top: 1px solid #e0e4e7;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+footer .footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: calc(100% - 330px);
+}
+.social-media {
+  width: 330px;
+  padding: 0 30px;
+  margin-bottom: 100px;
+}
+.social-media p {
+  font-family: YekanBakhHeavy;
+  font-size: 1.3rem;
+  color: #303030;
+}
+.social-media div {
+  display: flex;
+  margin-top: 20px;
+}
+.social-media a {
+  background-color: #eff4fe;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-left: 15px;
+}
+.footer-links p {
+  font-size: 1.3rem;
+  font-family: YekanBakhHeavy;
+  margin-top: 15px;
+  color: #303030;
+}
+.footer-links ul {
+  list-style: none;
+}
+.footer-links a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: iranyekanwebmedium;
+  color: black;
+}
+.footer-links li {
+  padding: 8px 0;
+}
+.bell {
+  background-color: #2e82ff;
+  width: fit-content;
+  padding: 7px 7px 0;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 40px;
+  left: 50px;
+}
+.bell img {
+  width: 40px;
+}
+
+@keyframes showUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1200px) {
+  header {
+    width: 940px;
+  }
+  .banner {
+    width: 900px;
+    padding: 60px 40px 120px;
+  }
+  .banner-image img {
+    width: 430px;
+  }
+  .online-payment {
+    width: 940px;
+  }
+  .zarin-link {
+    justify-content: flex-start;
+  }
+  .section-text2 {
+    width: 430px;
+  }
+
+  .zarin-link-img img {
+    width: 200px;
+    height: 20px;
+  }
+  .zarin-card {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .zarin-card-text {
+    width: 430px;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 16px;
+    padding-left: 20px;
+  }
+  .tashim {
+    display: flex;
+    justify-content: space-between;
+    margin: 90px auto;
+  }
+  .tashim-text {
+    margin-right: 50px;
+    width: 400px;
+    padding-right: 90px;
+  }
+  .tashim-img img {
+    width: 496px;
+    height: 400px;
+  }
+  .tashim-text p {
+    width: 300px;
+  }
+  .zarinplus-text {
+    width: 577px;
+    height: 339;
+    padding-right: 10px;
+  }
+  .zarinplus-text p {
+    width: 460px;
+    padding-left: 20px;
+  }
+  .zarinplus-img {
+    margin-left: 20px;
+  }
+  .attributes {
+    width: 924px;
+    padding: 0 8px;
+    flex-direction: column;
+  }
+  .definition {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .definition p {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .first-item,
+  .second-item,
+  .third-item,
+  .fourth-item {
+    border: none;
+  }
+  .items {
+    width: 90%;
+    padding: 30px;
+  }
+  .items .item {
+    padding: 18px 0 20px 50px;
+  }
+  footer {
+    width: 940px;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    width: auto;
+    padding: 20px 60px;
+  }
+  .header-ul li:last-child {
+    display: none;
+  }
+  .logo {
+    margin: 0;
+  }
+  .header-ul li {
+    margin: 0 10px;
+  }
+  .banner {
+    width: auto;
+    padding: 40px 40px 85px;
+    margin: 0 35px;
+  }
+  .banner-image img {
+    display: none;
+  }
+  .banner-text {
+    text-align: center;
+  }
+  .banner-text p {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  .go-down div {
+    margin-top: 30px;
+  }
+  .online-payment {
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-text {
+    width: 95%;
+    padding-right: 45px;
+  }
+  .section-text2 {
+    width: 915px;
+    height: calc(350px - 69px);
+    font-size: 0.9rem;
+    padding-left: 80px;
+  }
+  .zarin-link {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .zarin-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .zarin-card-text {
+    width: 95%;
+    padding-right: 40px;
+  }
+  .zarin-card-text p {
+    width: auto;
+    font-size: 1rem;
+    letter-spacing: normal;
+  }
+  .tashim {
+    display: flex;
+    flex-direction: column;
+  }
+  .tashim-img {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 400px;
+  }
+  .tashim-text {
+    width: 95%;
+    margin-left: 105px;
+  }
+  .tashim-text p {
+    width: 100%;
+  }
+  .tashim-img img {
+    width: 556px;
+    height: 400px;
+  }
+  .zarin-plus {
+    flex-direction: column;
+  }
+  .zarinplus-text {
+    width: 95%;
+  }
+  .zarinplus-text p {
+    width: 100%;
+  }
+  .attributes {
+    width: auto;
+    padding: 0 35px;
+  }
+  footer {
+    flex-direction: column;
+    width: calc(100% - 60px);
+  }
+  footer .footer-links {
+    width: 100%;
+  }
+  footer .social-media {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 768px) {
+  .header-ul {
+    display: none;
+  }
+  header {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .hamburger-icon {
+    display: block;
+    margin-left: 20px;
+  }
+  .logo {
+    margin-right: 20px;
+  }
+  .banner {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .section-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+  }
+  .online-payment img {
+    width: 460px;
+    height: 480px;
+  }
+  .section-text2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 0px 90px;
+    font-size: 1rem;
+    width: auto;
+  }
+  .zarin-link-img {
+    display: none;
+  }
+  .definition {
+    text-align: center;
+    margin-top: 90px;
+  }
+  .definition h3 {
+    font-size: 1.6rem;
+  }
+  .tashim-text {
+    width: 450px;
+  }
+  .items {
+    width: 100%;
+    padding: 50px 0;
+    display: none;
+  }
+  .items .item {
+    padding: 18px 0 20px 20px;
+  }
+  footer {
+    width: calc(100% - 120px);
+    margin: 0 60px;
+  }
+  footer .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer .footer-links div {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 575px) {
+ 
+  .banner {
+    padding: 80px 40px;
+  }
+  .banner-text h3 {
+    font-size: 1.2rem;
+
+    text-align: right;
+  }
+  .banner-text p {
+    text-align: justify;
+  }
+  .online-payment img {
+    display: none;
+  }
+  .section-text {
+    width: 80%;
+    padding: 30px 10px;
+  }
+  .section-text h3 {
+    font-size: 1.5rem;
+  }
+  .definition {
+    padding-top: 80px;
+  }
+  .zarin-link-img {
+    display: none;
+  }
+  .zarin-card{
+    width: 80%;
+    padding: 30px 10px;
+    margin-top: 110px;
+  }
+  .zarin-card-text {
+    width: 80%;
+    padding: 30px 10px;
+    text-align: center;
+  }
+  .zarin-card-links {
+    margin-right: 100px;
+    margin: 0 auto;
+  }
+  .zarin-link-button {
+    width: 100%;
+  }
+  
+  .zarin-card-image {
+    display: none;
+  }
+  section{
+    width: 80%;
+    padding: 30px 10px;
+  }
+   .tashim-text{
+    width: 80%;
+    padding: 30px 10px;
+ text-align: center;
+  }
+  .tashim-links{
+    width: 390px;
+    margin: 0 auto;
+    
+  }
+  .tashim-img{
+    display: none;
+  }
+  
+  .zarin-plus{
+    width: 80%;
+    padding: 30px 10px;
+    margin-top: 100px
+  }
+  .zarin-plus-text {
+    width: 80%;
+    padding: 30px 10px;
+    text-align: center;
+  }
+  .zarin-plus-links{
+    margin-top: 130px;
+  }
+
+  .zarinplus-img img {
+    display: none;
+  }
+  .zarinplus-text {
+    text-align: center;
+  }
+  .items {
+    grid-template-columns: 1fr;
+    padding: 50px 0;
+  }
+  .items .item {
+    padding: 18px 0;
+  }
+  footer {
+    width: calc(100% - 60px);
+    margin: 0 30px;
+  }
+  .footer-links p,.footer-links a {
+    font-size: 0.9rem;
+  }
+  .bell{
+   left: 10px;
+    bottom:5px ;
+ 
+  }
+  
+}
